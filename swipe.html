@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>swipe</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="background-color: red; width: 200px; height: 200px"
+    ></div>
+  </body>
+  <script>
+    let pad = document.querySelector(".container");
+    pad.addEventListener("touchstart", handleTouchStart);
+    pad.addEventListener("touchend", handleTouchEnd);
+
+    let startX, startY, endX, endY, moved;
+
+    pad.addEventListener("mousedown", (e) => {
+      moved = false;
+      startX = e.clientX;
+      startY = e.clientY;
+    });
+    pad.addEventListener("mousemove", (e) => {
+      moved = true;
+    });
+    pad.addEventListener("mouseup", (e) => {
+      endX = e.clientX;
+      endY = e.clientY;
+      if (startX && startY && moved) {
+        if (endX - startX > endY - startY) {
+          console.log("hi");
+        }
+      }
+    });
+
+    function handleTouchStart(e) {
+      let landingTouch = e.changedTouches[0];
+      startX = landingTouch.pageX;
+      startY = landingTouch.pageY;
+    }
+
+    function handleTouchEnd(e) {
+      let landingTouch = e.changedTouches[0];
+      endX = landingTouch.pageX;
+      endY = landingTouch.pageY;
+      if (endX - startX > endY - startY) {
+        console.log("hi");
+      }
+    }
+  </script>
+</html>
