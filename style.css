@@ -5,12 +5,12 @@
 }
 body{
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     font-family: 'Poppins',sans-serif;
 }
 .main-container{
     width: 100%;
-    min-height:100vh ;
+    max-height:100vh ;
     background: url('./Images/bg-img1.png') #D91567;
     display: flex;
     justify-content: center;
