@@ -5,17 +5,18 @@
 }
 body{
     width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     font-family: 'Poppins',sans-serif;
 }
 .main-container{
     width: 100%;
-    max-height:100vh ;
+    height:100vh;
     background: url('./Images/bg-img1.png') #D91567;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 .main-container .content{
     display: flex;
