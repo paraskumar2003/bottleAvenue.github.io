@@ -111,6 +111,7 @@
             let code = document.querySelector('.code').textContent;
             copy_btn.addEventListener("click", () => {
             navigator.clipboard.writeText(code);
+            copy_btn.setAttribute('src','./Images/check.png');
     });
             })
 

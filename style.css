@@ -119,6 +119,10 @@ body{
     70%{
         transform: rotateX(-50deg);
     }
+    80%{
+        transform: rotateX(0);
+        top: 40%;
+    }
     100%{
         transform: rotateX(0);
         top: 40%;
@@ -152,6 +156,7 @@ body{
 }
 .copy-code{
     cursor: pointer;
+    width:60px;
 }
 .bottle-1{
     transition: 0.2s all ease;
