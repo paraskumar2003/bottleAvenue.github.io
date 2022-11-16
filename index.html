@@ -66,7 +66,6 @@
         content.style.animationIterationCount = `1`;
         setTimeout(()=>{
             bottle.style.animation = `moveup 0.5s linear`;
-            bottle.setAttribute('src','./Images/bottle-open.png')
             bottle.style.animationIterationCount = `1`;
         },100)
 
@@ -78,9 +77,9 @@
         },350)
 
     setTimeout(()=>{
-        bottle.style.animation = `bounceup 0.5s ease`;
+        bottle.style.animation = `bounceup 1s ease`;
         // mainContainer.style.opacity = `0`;
-        mainContainer.style.animation = `changetobg2 0.5s ease`;
+        mainContainer.style.animation = `changetobg2 1s ease`;
         setTimeout(()=>{
             bottle.style.top = `40%`
             mainContainer.style.background = `url('./Images/bg-img2.png') #D91567`;
@@ -90,11 +89,13 @@
             content.style.position = `absolute`;
             content.style.top = `10%`;
             content.style.opacity = `1`;
-
-
-
-
-        setTimeout(()=>{
+            
+            
+           setTimeout(()=>{
+               bottle.setAttribute('src','./Images/bottle-open.png')
+           },100) 
+            
+            setTimeout(()=>{
             content.innerHTML = `<h1>Get 20% off everytime your favorite team wins any WC knock-out matches!</h1>
             <div class="copy-container">
       <div class="code">PELE-10</div>
@@ -114,10 +115,14 @@
             })
 
             
-        },800)
+        },2000)
             
-        },350)
-    },1000)
+        },600)
+    },2000)
+
+
+
+
         }
       }
     });
@@ -159,44 +164,44 @@
             bottle.style.top = `20%`;
         },350)
 
-    setTimeout(()=>{
-        bottle.style.animation = `bounceup 0.5s ease`;
-        // mainContainer.style.opacity = `0`;
-        mainContainer.style.animation = `changetobg2 0.5s ease`;
-        setTimeout(()=>{
-            bottle.style.top = `40%`
-            mainContainer.style.background = `url('./Images/bg-img2.png') #D91567`;
-            content.innerHTML = `<h1>Celebrate the World Cup with a Kombucha!</h1>`
-            content.style.animation = `none`;
-            content.style.display = `flex`;
-            content.style.position = `absolute`;
-            content.style.top = `10%`;
-            content.style.opacity = `1`;
+    // setTimeout(()=>{
+
+    //     setTimeout(()=>{
+    //         bottle.style.animation = `bounceup 0.5s ease`;
+    //         mainContainer.style.animation = `changetobg2 0.5s ease`;
+    //         bottle.style.top = `40%`
+    //         mainContainer.style.background = `url('./Images/bg-img2.png') #D91567`;
+    //         content.innerHTML = `<h1>Celebrate the World Cup with a Kombucha!</h1>`
+    //         content.style.animation = `none`;
+    //         content.style.display = `flex`;
+    //         content.style.position = `absolute`;
+    //         content.style.top = `10%`;
+    //         content.style.opacity = `1`;
 
 
 
 
-        setTimeout(()=>{
-            content.innerHTML = `<h1>Get 20% off everytime your favorite team wins any WC knock-out matches!</h1>
-            <div class="copy-container">
-      <div class="code">PELE-10</div>
-      <img src="./Images/copy.png" alt="copy" class="copy-code" />
-    </div>
-            `;
-            bottle.style.top = `45%`;
-            setTimeout(()=>{
-                let copy_btn = document.querySelector(".copy-code");
-            let code = document.querySelector('.code').textContent;
-            copy_btn.addEventListener("click", () => {
-            navigator.clipboard.writeText(code);
-    });
-            })
+    //     setTimeout(()=>{
+    //         content.innerHTML = `<h1>Get 20% off everytime your favorite team wins any WC knock-out matches!</h1>
+    //         <div class="copy-container">
+    //   <div class="code">PELE-10</div>
+    //   <img src="./Images/copy.png" alt="copy" class="copy-code" />
+    // </div>
+    //         `;
+    //         bottle.style.top = `45%`;
+    //         setTimeout(()=>{
+    //             let copy_btn = document.querySelector(".copy-code");
+    //         let code = document.querySelector('.code').textContent;
+    //         copy_btn.addEventListener("click", () => {
+    //         navigator.clipboard.writeText(code);
+    // });
+    //         })
 
             
-        },800)
+    //     },800)
             
-        },350)
-    },1000)
+    //     },350)
+    // },5000)
 
 
 

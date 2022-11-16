@@ -110,11 +110,14 @@ body{
     0%{
         transform: rotateX(0);
     }
-    50%{
-        transform: rotateX(-45deg);
+    10%{
+        transform: rotateX(-35deg);
     }
-    75%{
-        transform: rotateX(-45deg);
+    25%{
+        transform: rotateX(-50deg);
+    }
+    70%{
+        transform: rotateX(-50deg);
     }
     100%{
         transform: rotateX(0);
